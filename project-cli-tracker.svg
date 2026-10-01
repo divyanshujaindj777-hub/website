@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgP4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="350" rx="16" fill="url(#bgP4)" stroke="#1e293b" stroke-width="2"/>
+  
+  <!-- Terminal Window Bar -->
+  <rect width="600" height="40" rx="16" fill="#0b0f19" />
+  <rect y="25" width="600" height="15" fill="#0b0f19" />
+  <line x1="0" y1="40" x2="600" y2="40" stroke="#1e293b" stroke-width="1" />
+  <circle cx="25" cy="20" r="5" fill="#ef4444" />
+  <circle cx="45" cy="20" r="5" fill="#f59e0b" />
+  <circle cx="65" cy="20" r="5" fill="#10b981" />
+  <text x="300" y="25" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#64748b">divyanshu@devbox: ~/projects/py-tracker</text>
+
+  <!-- Terminal Content -->
+  <g font-family="'JetBrains Mono', monospace" font-size="13">
+    <!-- Prompt 1 -->
+    <text x="30" y="80" fill="#10b981">$</text>
+    <text x="48" y="80" fill="#38bdf8">python3 tracker.py --summary --month=sep</text>
+
+    <!-- ASCII Box / Output -->
+    <text x="30" y="115" fill="#6366f1">┌── Expense &amp; Budget Intelligence CLI ──────────────┐</text>
+    <text x="30" y="140" fill="#94a3b8">│ Total Budget Allocated  : ₹12,000.00              │</text>
+    <text x="30" y="165" fill="#94a3b8">│ Total Expended (Sept)   : ₹4,350.00 [36.25%]      │</text>
+    <text x="30" y="190" fill="#10b981">│ Balance Remaining       : ₹7,650.00 (Healthy)     │</text>
+    <text x="30" y="215" fill="#94a3b8">│ Top Category            : Tech Books &amp; Courses    │</text>
+    <text x="30" y="240" fill="#6366f1">└── Data saved to sqlite3 &amp; exported to CSV ───────┘</text>
+
+    <!-- Prompt 2 -->
+    <text x="30" y="280" fill="#10b981">$</text>
+    <text x="48" y="280" fill="#e2e8f0">./tracker.py --add-task "Complete LeetCode Trees"</text>
+    <text x="30" y="305" fill="#10b981">[✔] Task #42 added to queue (Priority: HIGH)</text>
+    
+    <!-- Cursor blink -->
+    <text x="30" y="330" fill="#10b981">$ </text>
+    <rect x="48" y="318" width="8" height="14" fill="#38bdf8" />
+  </g>
+</svg>

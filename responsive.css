@@ -1,0 +1,215 @@
+/**
+ * =========================================================================
+ * RESPONSIVE BREAKPOINTS & MOBILE NAVIGATION — DIVYANSHU JAIN PORTFOLIO
+ * =========================================================================
+ */
+
+/* Medium Devices & Small Desktops (<= 1140px) */
+@media (max-width: 1140px) {
+  .nav-menu {
+    gap: 2px;
+  }
+  
+  .nav-link {
+    padding: 6px 10px;
+    font-size: 0.82rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-intro {
+    margin: 0 auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-socials {
+    justify-content: center;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet & Mobile (<= 880px) */
+@media (max-width: 880px) {
+  :root {
+    --navbar-height: 68px;
+  }
+
+  /* Show Hamburger Trigger */
+  .hamburger-btn {
+    display: flex;
+  }
+
+  /* Transform Nav Menu into Slide-in Mobile Drawer */
+  .nav-menu {
+    position: fixed;
+    top: var(--navbar-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bg-secondary);
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 24px 20px 40px 20px;
+    gap: 8px;
+    overflow-y: auto;
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform var(--transition-smooth), opacity var(--transition-normal);
+    border-top: 1px solid var(--border-subtle);
+    z-index: 999;
+  }
+
+  .nav-menu.open {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-link {
+    padding: 14px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-subtle);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-link:hover, .nav-link.active {
+    background: var(--grad-primary);
+    color: #ffffff;
+  }
+
+  /* Section Spacing */
+  .section {
+    padding: 70px 0;
+  }
+
+  .section-header {
+    margin-bottom: 36px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .learning-phases-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding-left: 28px;
+  }
+
+  .timeline-dot {
+    left: -28px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .timeline-dot::after {
+    width: 6px;
+    height: 6px;
+  }
+
+  .timeline::before {
+    left: 9px;
+  }
+
+  .education-card {
+    padding: 20px;
+  }
+
+  .modal-content {
+    max-height: 85vh;
+  }
+
+  .modal-header {
+    padding: 16px 20px;
+  }
+
+  .modal-body {
+    padding: 20px;
+  }
+}
+
+/* Small Phones (<= 520px) */
+@media (max-width: 520px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero-name {
+    font-size: 2.2rem;
+  }
+
+  .hero-title {
+    font-size: 1.05rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exploring-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievements-grid,
+  .cert-grid,
+  .activities-grid,
+  .profiles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info-card,
+  .contact-form-card,
+  .about-main-card,
+  .resume-card,
+  .learning-highlight-card {
+    padding: 22px 18px;
+  }
+
+  .back-to-top-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}

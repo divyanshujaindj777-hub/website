@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgP3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="100%" stop-color="#171536" />
+    </linearGradient>
+    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="350" rx="16" fill="url(#bgP3)" stroke="#1e293b" stroke-width="2"/>
+  
+  <!-- Browser Frame Bar -->
+  <rect width="600" height="40" rx="16" fill="#0f172a" />
+  <rect y="25" width="600" height="15" fill="#0f172a" />
+  <line x1="0" y1="40" x2="600" y2="40" stroke="#1e293b" stroke-width="1" />
+  <circle cx="25" cy="20" r="5" fill="#ef4444" />
+  <circle cx="45" cy="20" r="5" fill="#f59e0b" />
+  <circle cx="65" cy="20" r="5" fill="#10b981" />
+  <!-- Search/URL Bar -->
+  <rect x="150" y="10" width="300" height="20" rx="10" fill="#1e293b" />
+  <text x="300" y="24" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8">https://divyanshu-jain.dev</text>
+
+  <!-- Portfolio UI Mockup -->
+  <!-- Hero Section Mock -->
+  <circle cx="300" cy="110" r="36" fill="#1e293b" stroke="url(#brandGradient)" stroke-width="2" />
+  <text x="300" y="117" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">DJ</text>
+  
+  <text x="300" y="170" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="800" fill="#ffffff" letter-spacing="1">DIVYANSHU JAIN</text>
+  <text x="300" y="195" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#38bdf8">B.Tech CSE Student • AI/ML Enthusiast • Developer</text>
+
+  <!-- Animated Pill -->
+  <rect x="190" y="215" width="220" height="26" rx="13" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <circle cx="205" cy="228" r="4" fill="#10b981" />
+  <text x="218" y="232" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#e2e8f0">Learning • Building • Growing</text>
+
+  <!-- Buttons Mock -->
+  <rect x="175" y="260" width="115" height="34" rx="8" fill="url(#brandGradient)" />
+  <text x="232" y="281" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#ffffff">View Projects</text>
+
+  <rect x="305" y="260" width="120" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="365" y="281" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1">Get In Touch</text>
+
+  <!-- Code watermark in corner -->
+  <text x="50" y="320" font-family="'JetBrains Mono', monospace" font-size="11" fill="#475569" opacity="0.6">&lt;glassmorphism-ui /&gt;</text>
+  <text x="550" y="320" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="11" fill="#475569" opacity="0.6">100% responsive</text>
+</svg>

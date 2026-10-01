@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgP1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="glowLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="350" rx="16" fill="url(#bgP1)" stroke="#1e293b" stroke-width="2"/>
+  
+  <!-- Window Header Bar -->
+  <rect width="600" height="40" rx="16" fill="#0f172a" />
+  <rect y="25" width="600" height="15" fill="#0f172a" />
+  <line x1="0" y1="40" x2="600" y2="40" stroke="#1e293b" stroke-width="1" />
+  <circle cx="25" cy="20" r="5" fill="#ef4444" />
+  <circle cx="45" cy="20" r="5" fill="#f59e0b" />
+  <circle cx="65" cy="20" r="5" fill="#10b981" />
+  <text x="300" y="25" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#64748b">ai-pathfinding-visualizer // A* &amp; Dijkstra</text>
+
+  <!-- Grid Graph Simulation -->
+  <g opacity="0.3" stroke="#334155" stroke-width="1">
+    <line x1="40" y1="70" x2="560" y2="70" />
+    <line x1="40" y1="120" x2="560" y2="120" />
+    <line x1="40" y1="170" x2="560" y2="170" />
+    <line x1="40" y1="220" x2="560" y2="220" />
+    <line x1="40" y1="270" x2="560" y2="270" />
+    <line x1="40" y1="320" x2="560" y2="320" />
+
+    <line x1="90" y1="50" x2="90" y2="330" />
+    <line x1="170" y1="50" x2="170" y2="330" />
+    <line x1="250" y1="50" x2="250" y2="330" />
+    <line x1="330" y1="50" x2="330" y2="330" />
+    <line x1="410" y1="50" x2="410" y2="330" />
+    <line x1="490" y1="50" x2="490" y2="330" />
+  </g>
+
+  <!-- Obstacle blocks -->
+  <rect x="250" y="120" width="80" height="100" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1.5" />
+  <rect x="330" y="170" width="80" height="50" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1.5" />
+  <text x="290" y="175" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8">WALL</text>
+
+  <!-- Start & Goal Nodes -->
+  <circle cx="90" cy="270" r="16" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-width="2" />
+  <circle cx="90" cy="270" r="6" fill="#10b981" />
+  <text x="90" y="305" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#10b981">START (0,0)</text>
+
+  <circle cx="490" cy="120" r="16" fill="#f43f5e" fill-opacity="0.2" stroke="#f43f5e" stroke-width="2" />
+  <circle cx="490" cy="120" r="6" fill="#f43f5e" />
+  <text x="490" y="100" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#f43f5e">GOAL (N,M)</text>
+
+  <!-- Path Calculated Curve -->
+  <path d="M 90 270 L 170 270 L 170 120 L 250 70 L 410 70 L 490 120" fill="none" stroke="url(#glowLine)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Evaluated Nodes animation/glow dots -->
+  <circle cx="170" cy="220" r="4" fill="#38bdf8" opacity="0.8" />
+  <circle cx="170" cy="170" r="4" fill="#38bdf8" opacity="0.8" />
+  <circle cx="210" cy="120" r="4" fill="#6366f1" opacity="0.8" />
+  <circle cx="290" cy="70" r="4" fill="#818cf8" opacity="0.8" />
+  <circle cx="370" cy="70" r="4" fill="#a855f7" opacity="0.8" />
+
+  <!-- Metric Overlay Badge -->
+  <rect x="360" y="275" width="210" height="45" rx="8" fill="#0f172a" fill-opacity="0.9" stroke="#334155" stroke-width="1"/>
+  <text x="375" y="295" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38bdf8">Cost: 14.82 ms</text>
+  <text x="375" y="310" font-family="'JetBrains Mono', monospace" font-size="11" fill="#10b981">Visited: 86 nodes (A* Opt)</text>
+</svg>
